@@ -89,6 +89,6 @@ function once(n){var o=!1;return function(){return o?void 0:(o=!0,n.apply(this,a
 function extend(){for(var r={},e=0;e<arguments.length;e++){var t=arguments[e];for(var n in t)hasOwnProperty.call(t,n)&&(r[n]=t[n])}return r}module.exports=extend;var hasOwnProperty=Object.prototype.hasOwnProperty;
 
 },{}],30:[function(require,module,exports){
-var HandlebarsCompiler=require("hbsfy/runtime");module.exports=HandlebarsCompiler.template({compiler:[7,">= 4.0.0"],main:function(e,a,n,l,r){var i;return"<h1>Hello "+e.escapeExpression((i=null!=(i=n.name||(null!=a?a.name:a))?i:n.helperMissing,"function"==typeof i?i.call(null!=a?a:{},{name:"name",hash:{},data:r}):i))+"!</h1>\n"},useData:!0});
+var HandlebarsCompiler=require("hbsfy/runtime");module.exports=HandlebarsCompiler.template({compiler:[7,">= 4.0.0"],main:function(l,e,a,n,t){var u,i=null!=e?e:{},d=a.helperMissing,o="function",r=l.escapeExpression;return"<h1>Hello "+r((u=null!=(u=a.name||(null!=e?e.name:e))?u:d,typeof u===o?u.call(i,{name:"name",hash:{},data:t}):u))+"!</h1>\n<ul>\n  <li>Latitude "+r((u=null!=(u=a.latitude||(null!=e?e.latitude:e))?u:d,typeof u===o?u.call(i,{name:"latitude",hash:{},data:t}):u))+"</li>\n  <li>Longitude "+r((u=null!=(u=a.longitude||(null!=e?e.longitude:e))?u:d,typeof u===o?u.call(i,{name:"longitude",hash:{},data:t}):u))+"</li>\n  <li>Altitude "+r((u=null!=(u=a.altitude||(null!=e?e.altitude:e))?u:d,typeof u===o?u.call(i,{name:"altitude",hash:{},data:t}):u))+"</li>\n</ul>\n"},useData:!0});
 
 },{"hbsfy/runtime":23}]},{},[1]);
